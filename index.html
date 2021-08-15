@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Server Sent Event</title>
+</head>
+
+<body>
+
+    <script>
+        let events = new EventSource("event");
+        events.addEventListener("message", (evt) => {
+            console.log("message recevied", evt.data);
+        });
+
+
+
+    </script>
+
+
+</body>
+
+</html>
